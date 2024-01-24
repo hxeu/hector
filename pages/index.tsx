@@ -19,7 +19,7 @@ export default function Page() {
   return (
     <div className="min-h-screen relative overflow-hidden bg-white">
       <div className="relative h-96 bg-black">
-        <video autoPlay loop muted className="h-full w-full">
+        <video autoPlay loop muted className="h-full w-full width">
           <source src="/main.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
