@@ -17,7 +17,7 @@ export default function Page() {
   }, [inView]);
 
   return (
-    <div className="min-h-screen relative overflow-hidden">
+    <div className="min-h-screen relative overflow-hidden bg-white">
       <div className="relative h-96 bg-black">
         <video autoPlay loop muted className="h-full w-full">
           <source src="/main.mp4" type="video/mp4" />
@@ -43,7 +43,7 @@ export default function Page() {
         } transition-opacity duration-1000 ease-in-out transform text-white`}
       >
         <div className="container mx-auto mt-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {/* ... (le reste du contenu de la page) */}
+          
         </div>
 
         <footer className="text-center p-4 text-gray-300">
