@@ -18,12 +18,10 @@ export default function Page() {
     }
   }, [inView]);
 
-  // Liste fictive de projets
   const projects = [
     { id: 'hctr', title: 'My Website (hctr.store) 💻', description: 'How did I make this? 👨‍💻', date: '01/2024'},
     { id: 'mauvais_soir', title: '"Mauvais Soir" 🌓', description: 'My monthly video series about my life! 🎥', date: '01/2022 - Today' },
     { id: 'real_estate_swipe', title: 'Danish Real Estate App 🏢', description: 'Learn more about a school project I did in Denmark. 📱', date: '06/2023' },
-    // Ajoutez d'autres projets selon vos besoins
   ];
 
   return (
@@ -60,6 +58,7 @@ export default function Page() {
         <div className="mt-8">
           <h2 className="text-3xl font-semibold mb-4 text-center">My creations</h2>
           <ProjectsList projects={projects} />
+          <br/>
         </div>
       </div>
     </div>
