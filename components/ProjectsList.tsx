@@ -3,6 +3,7 @@ interface Project {
   id: string;
   title: string;
   description: string;
+  date: string;
 }
 
 interface ProjectsListProps {
@@ -16,8 +17,9 @@ const ProjectsList: React.FC<ProjectsListProps> = ({ projects }) => {
         <div key={project.id} className="border p-4 cursor-pointer hover:shadow-lg transition duration-300">
           <Link legacyBehavior href={`/projects/${project.id}`}>
             <a>
-              <h2 className="text-xl font-bold">{project.title}</h2>
-              <p>{project.description}</p>
+              <h2 className="text-xl font-bold text-black">{project.title}</h2><p className='text-gray-400 '>({project.date})</p>
+
+              <p className='text-black'>{project.description}</p>
             </a>
           </Link>
         </div>
