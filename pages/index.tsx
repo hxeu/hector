@@ -20,8 +20,9 @@ export default function Page() {
 
   // Liste fictive de projets
   const projects = [
-    { id: 'hctr', title: 'My website (hctr.store) 💻', description: 'How did I make this? 👨‍💻' },
+    { id: 'hctr', title: 'My Website (hctr.store) 💻', description: 'How did I make this? 👨‍💻' },
     { id: 'mauvais_soir', title: '"Mauvais Soir" 🌓', description: 'My monthly video series about my life! 🎥' },
+    { id: 'real_estate_swipe', title: 'Danish Real Estate App 🏢', description: 'Learn more about a school project I did in Denmark. 📱' },
     // Ajoutez d'autres projets selon vos besoins
   ];
 
