@@ -1,4 +1,6 @@
 import Link from 'next/link';
+import '../src/app/globals.css';
+
 interface Project {
   id: string;
   title: string;
