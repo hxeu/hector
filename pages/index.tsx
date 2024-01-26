@@ -47,16 +47,14 @@ export default function Page() {
           <h1 className="text-black text-5xl font-mono font-bold mb-2">Hector Ménétrier</h1>
           <p className="text-gray-500">CS Student in France 🇫🇷, Denmark 🇩🇰 and Canada 🇨🇦</p>
         </div>
-        <br />
-        <br />
 
-        <footer className="text-center p-4 text-gray-300">
-          Soon to be Double Degree in CS 🇫🇷 🇨🇦 - URCA-UQAC - Graduating in August 2024
-        </footer>
+        <div className="text-center p-4 text-gray-400">
+          Soon to be Double French-Canadian Computer Science Graduate 🇫🇷 🇨🇦 - URCA-UQAC - Graduating in August 2024
+        </div>
 
         {/* Section des projets */}
         <div className="mt-8">
-          <h2 className="text-3xl font-semibold mb-4 text-center">My creations</h2>
+          <h2 className="text-3xl font-semibold mb-4 text-center font-mono">My creations :</h2>
           <ProjectsList projects={projects} />
           <br/>
         </div>
