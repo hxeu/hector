@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 // pages/projects/hctr.tsx
 import Head from 'next/head';
 import '../../src/app/globals.css';
