@@ -19,25 +19,55 @@ const HctrPage = () => {
         <div className="mt-8">
           <h1 className="text-4xl font-bold mb-4 text-black">Creation of this Website</h1>
           <p className="text-gray-600">
-            Welcome to this website! I created this website to showcase my projects and skills. I also wanted to learn more about Next.js and Tailwind CSS. I hope you enjoy your visit!
+            Welcome to this website! I created this website to showcase my projects and skills. As you can see, this website is very simple. I wanted to keep it simple and clean, so I decided to use a minimalist design. I made it without using any template or low-code/no-code tools. I hope you enjoy your visit!
           </p>
         </div>
+
         {/* Section: Technologies Used */}
         <div className="mt-8">
           <h2 className="text-2xl font-semibold mb-2 text-black">Technologies Used</h2>
-          <ul className="list-disc pl-4 text-black">
-            <li>Next.js</li>
+          <ul className="list-disc pl-4 text-gray-600">
             <li>TypeScript</li>
+            <li>React (Next.js)</li>
             <li>Tailwind CSS</li>
+            <li>Blender (for the orbs)</li>
           </ul>
         </div>
+
         {/* Section: Development Process */}
         <div className="mt-8">
           <h2 className="text-2xl font-semibold mb-2 text-black">Development Process</h2>
           <p className="text-gray-600">
-            The site was developed using Next.js, a React framework that makes it easy to build fast and efficient web applications. Styling is handled with Tailwind CSS, providing a utility-first approach to design.
+            The site is developed using Next.js, a React framework that makes it easy to build fast and efficient web applications. Styling is handled with Tailwind CSS, providing a utility-first approach to design.
+            <br/>
+            I never used these two before, so I had to learn them from scratch. I also use TypeScript, which I already knew because I had a few courses about it in Denmark. It is still a bit challenging but very interesting to work with.
           </p>
         </div>
+
+        {/* Section: ORBS */}
+        <div className="mt-8">
+          <h2 className="text-2xl font-semibold mb-2 text-black">About the orbs</h2>
+          <p className="text-gray-600">
+            For this website, i wanted to create a unique design. I decided to create a 3D animation of rotating orbs with Blender. 
+            I then exported the animation as a video and used it as a header for every page of the website.
+            <br/>
+            Every page has a different color, shape and animation (but always rotating anticlockwise) for the orbs, and the color will be used as a general CSS theme for the page (work in progress).
+          </p>
+        </div>
+
+        {/* Section: Deployment */}
+        <div className="mt-8">
+          <h2 className="text-2xl font-semibold mb-2 text-black">Deployment Process</h2>
+          <p className="text-gray-600">
+            This website is a constant work in progress and is getting regular updates. I manage my source code on Github with regular commits.
+            <br/>
+            The website is hosted on Github Pages. I use Github Actions to automatically deploy the website when I push to the main branch. 
+            <br/>
+            I use a custom domain name (hctr.store) that I bought on Amen.fr. If you still wonder why I chose this domain name, it's because it's my name without the vowels! 
+          </p>
+        </div>
+
+
       </div>
     </div>
   );
