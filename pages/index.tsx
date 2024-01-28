@@ -49,12 +49,12 @@ export default function Page() {
         </div>
 
         <div className="text-center p-4 text-gray-400">
-          Soon to be Double French-Canadian Computer Science Graduate 🇫🇷 🇨🇦 - URCA-UQAC - Graduating in August 2024
+          Soon to be Double Computer Science Graduate 🇫🇷 - 🇨🇦 - URCA-UQAC - Graduating in August 2024
         </div>
 
         {/* Section des projets */}
         <div className="mt-8">
-          <h2 className="text-3xl font-semibold mb-4 text-center font-mono">My creations :</h2>
+          <h2 className="text-3xl font-semibold mb-4 text-center font-mono text-black">My work :</h2>
           <ProjectsList projects={projects} />
           <br/>
         </div>
