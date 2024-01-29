@@ -13,7 +13,7 @@ const HctrPage = () => {
   };
 
   return (
-    <div className="min-h-screen relative overflow-hidden bg-gray-100">
+    <div className="min-h-screen relative overflow-hidden bg-green-50">
       <Head>
         <title>This Website | Hector Ménétrier</title>
       </Head>
@@ -24,7 +24,7 @@ const HctrPage = () => {
         </video>
       </div>
       <div className="mx-5">
-        <div className=" mt-8 container mx-auto p-8 bg-white rounded-lg shadow-lg">
+        <div className=" mt-8 container mx-auto p-8 bg-white rounded-lg shadow-lg border-2 border-green-300/50">
           <h1 className="text-4xl font-bold mb-4 text-black">Creation of this Website</h1>
           <p className="text-gray-600">
             Welcome to this website! I created this website to showcase my projects and skills. As you can see, this website is very simple. I wanted to keep it simple and clean, so I decided to use a minimalist design. I made it without using any template or low-code/no-code tools. I hope you enjoy your visit!
