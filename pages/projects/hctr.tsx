@@ -2,8 +2,15 @@
 // pages/projects/hctr.tsx
 import Head from 'next/head';
 import '../../src/app/globals.css';
+import Image from 'next/image';
+import { useState } from 'react';
 
 const HctrPage = () => {
+  const [isImageExpanded, setIsImageExpanded] = useState(false);
+
+  const handleImageClick = () => {
+    setIsImageExpanded(!isImageExpanded);
+  };
   return (
     <div className="min-h-screen relative overflow-hidden bg-white">
       <Head>
@@ -26,13 +33,32 @@ const HctrPage = () => {
 
         {/* Section: Technologies Used */}
         <div className="mt-8">
-          <h2 className="text-2xl font-semibold mb-2 text-black">Technologies Used</h2>
-          <ul className="list-disc pl-4 text-gray-600">
-            <li>TypeScript</li>
-            <li>React (Next.js)</li>
-            <li>Tailwind CSS</li>
-            <li>Blender (for the orbs)</li>
-          </ul>
+          <h2 className="text-2xl font-semibold mb-4">Technologies Used</h2>
+          <div className="flex items-center mb-2">
+            {/* Logo for TypeScript */}
+            <Image src="/typescript-logo.svg" alt="TypeScript Logo" width={8} height={8} className="w-8 h-8 mr-2" />
+            <p>TypeScript</p>
+          </div>
+          <div className="flex items-center mb-2">
+            {/* Logo for Next.js */}
+            <Image src="/nextjs-logo.svg" alt="Next.js Logo" width={8} height={8} className="w-8 h-8 mr-2" />
+            <p>Next.js</p>
+          </div>
+          <div className="flex items-center mb-2">
+            {/* Logo for Tailwind CSS */}
+            <Image src="/tailwindcss-logo.svg" alt="Tailwind CSS Logo" width={8} height={8} className="w-8 h-8 mr-2" />
+            <p>Tailwind CSS</p>
+          </div>
+          <div className="flex items-center mb-2">
+            {/* Logo for Github */}
+            <Image src="/github-logo.svg" alt="Github Logo" width={8} height={8} className="w-8 h-8 mr-2" />
+            <p>Github</p>
+          </div>
+          <div className="flex items-center mb-2">
+            {/* Logo for Blender */}
+            <Image src="/blender-logo.png" alt="Blender Logo" width={8} height={8} className="w-8 h-8 mr-2" />
+            <p>Blender</p>
+          </div>
         </div>
 
         {/* Section: Development Process */}
@@ -41,7 +67,7 @@ const HctrPage = () => {
           <p className="text-gray-600">
             The site is developed using Next.js, a React framework that makes it easy to build fast and efficient web applications. Styling is handled with Tailwind CSS, providing a utility-first approach to design.
             <br/>
-            I never used these two before, so I had to learn them from scratch. I also use TypeScript, which I already knew because I had a few courses about it in Denmark. It is still a bit challenging but very interesting to work with.
+            I never used these two before, so I had to learn them from scratch. I'm also writing in TypeScript, which I already knew because I had a few courses about it in Denmark. It is still a bit challenging but very interesting to work with.
           </p>
         </div>
 
@@ -53,7 +79,19 @@ const HctrPage = () => {
             I then exported the animation as a video and used it as a header for every page of the website.
             <br/>
             Every page has a different color, shape and animation (but always rotating anticlockwise) for the orbs, and the color will be used as a general CSS theme for the page (work in progress).
+            
           </p>
+          <div
+              className={`relative cursor-pointer overflow-hidden ${isImageExpanded ? 'h-full' : 'h-32'}`}
+              onClick={handleImageClick}
+            >
+              <Image src="/blender_screen.png" alt="Blender Logo" width={1920} height={1080} className="flex items-center" />
+            </div>
+            {!isImageExpanded && (
+              <p className="text-blue-500 cursor-pointer mt-2" onClick={handleImageClick}>
+                Click to view the full image
+              </p>
+            )}
         </div>
 
         {/* Section: Deployment */}
@@ -62,7 +100,7 @@ const HctrPage = () => {
           <p className="text-gray-600">
             This website is a constant work in progress and is getting regular updates. I manage my source code on Github with regular commits.
             <br/>
-            The website is hosted on Github Pages. I use Github Actions to automatically deploy the website when I push to the main branch. 
+            The website is hosted on Github Pages. I'm using Github Actions to automatically deploy the website when I push to the main branch. 
             <br/>
             I use a custom domain name (hctr.store) that I bought on Amen.fr. If you still wonder why I chose this domain name, it's because it's my name without the vowels! 
           </p>
