@@ -34,27 +34,27 @@ const HctrPage = () => {
         {/* Section: Technologies Used */}
         <div className="mt-8">
           <h2 className="text-2xl font-semibold mb-4">Technologies Used</h2>
-          <div className="flex items-center mb-2">
+          <div className="flex items-center mb-2 text-gray-600">
             {/* Logo for TypeScript */}
             <Image src="/typescript-logo.svg" alt="TypeScript Logo" width={8} height={8} className="w-8 h-8 mr-2" />
             <p>TypeScript</p>
           </div>
-          <div className="flex items-center mb-2">
+          <div className="flex items-center mb-2 text-gray-600">
             {/* Logo for Next.js */}
             <Image src="/nextjs-logo.svg" alt="Next.js Logo" width={8} height={8} className="w-8 h-8 mr-2" />
             <p>Next.js</p>
           </div>
-          <div className="flex items-center mb-2">
+          <div className="flex items-center mb-2 text-gray-600">
             {/* Logo for Tailwind CSS */}
             <Image src="/tailwindcss-logo.svg" alt="Tailwind CSS Logo" width={8} height={8} className="w-8 h-8 mr-2" />
             <p>Tailwind CSS</p>
           </div>
-          <div className="flex items-center mb-2">
+          <div className="flex items-center mb-2 text-gray-600">
             {/* Logo for Github */}
             <Image src="/github-logo.svg" alt="Github Logo" width={8} height={8} className="w-8 h-8 mr-2" />
             <p>Github</p>
           </div>
-          <div className="flex items-center mb-2">
+          <div className="flex items-center mb-2 text-gray-600">
             {/* Logo for Blender */}
             <Image src="/blender-logo.png" alt="Blender Logo" width={8} height={8} className="w-8 h-8 mr-2" />
             <p>Blender</p>
