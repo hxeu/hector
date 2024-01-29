@@ -13,7 +13,7 @@ const HctrPage = () => {
   };
 
   return (
-    <div className="min-h-screen relative overflow-hidden bg-white">
+    <div className="min-h-screen relative overflow-hidden bg-gray-100">
       <Head>
         <title>This Website | Hector Ménétrier</title>
       </Head>
@@ -23,41 +23,44 @@ const HctrPage = () => {
           Your browser does not support the video tag.
         </video>
       </div>
-      <div className="container mx-auto p-8 bg-white rounded-lg shadow-lg">
-        <div className="mt-8">
+      <div className="">
+        <div className="mt-8 container mx-auto p-8 bg-white rounded-lg shadow-lg">
           <h1 className="text-4xl font-bold mb-4 text-black">Creation of this Website</h1>
           <p className="text-gray-600">
             Welcome to this website! I created this website to showcase my projects and skills. As you can see, this website is very simple. I wanted to keep it simple and clean, so I decided to use a minimalist design. I made it without using any template or low-code/no-code tools. I hope you enjoy your visit!
           </p>
         </div>
 
-        <div className="mt-8">
+        <div className="mt-8 container mx-auto p-8 bg-white rounded-lg shadow-lg">
           <h2 className="text-2xl font-semibold mb-4 text-black">Technologies Used</h2>
-          <ul className="list-disc pl-6">
-            <li className="text-gray-600 flex items-center mb-2">
-              <Image src="/typescript-logo.svg" alt="TypeScript Logo" width={16} height={16} className="w-8 h-8 mr-2" />
-              TypeScript
-            </li>
-            <li className="text-gray-600 flex items-center mb-2">
-              <Image src="/nextjs-logo.svg" alt="Next.js Logo" width={16} height={16} className="w-8 h-8 mr-2" />
-              Next.js
-            </li>
-            <li className="text-gray-600 flex items-center mb-2">
-              <Image src="/tailwindcss-logo.svg" alt="Tailwind CSS Logo" width={16} height={16} className="w-8 h-8 mr-2" />
-              Tailwind CSS
-            </li>
-            <li className="text-gray-600 flex items-center mb-2">
-              <Image src="/github-logo.svg" alt="Github Logo" width={16} height={16} className="w-8 h-8 mr-2" />
-              Github
-            </li>
-            <li className="text-gray-600 flex items-center">
-              <Image src="/blender-logo.png" alt="Blender Logo" width={16} height={16} className="w-8 h-8 mr-2" />
-              Blender
-            </li>
-          </ul>
+          <div className="flex items-center mb-2 text-gray-600">
+            {/* Logo for TypeScript */}
+            <Image src="/typescript-logo.svg" alt="TypeScript Logo" width={8} height={8} className="w-8 h-8 mr-2" />
+            <p>TypeScript</p>
+          </div>
+          <div className="flex items-center mb-2 text-gray-600">
+            {/* Logo for Next.js */}
+            <Image src="/nextjs-logo.svg" alt="Next.js Logo" width={8} height={8} className="w-8 h-8 mr-2" />
+            <p>Next.js</p>
+          </div>
+          <div className="flex items-center mb-2 text-gray-600">
+            {/* Logo for Tailwind CSS */}
+            <Image src="/tailwindcss-logo.svg" alt="Tailwind CSS Logo" width={8} height={8} className="w-8 h-8 mr-2" />
+            <p>Tailwind CSS</p>
+          </div>
+          <div className="flex items-center mb-2 text-gray-600">
+            {/* Logo for Github */}
+            <Image src="/github-logo.svg" alt="Github Logo" width={8} height={8} className="w-8 h-8 mr-2" />
+            <p>Github</p>
+          </div>
+          <div className="flex items-center mb-2 text-gray-600">
+            {/* Logo for Blender */}
+            <Image src="/blender-logo.png" alt="Blender Logo" width={8} height={8} className="w-8 h-8 mr-2" />
+            <p>Blender</p>
+          </div>
         </div>
 
-        <div className="mt-8">
+        <div className="mt-8 container mx-auto p-8 bg-white rounded-lg shadow-lg">
           <h2 className="text-2xl font-semibold mb-4 text-black">Development Process</h2>
           <p className="text-gray-600">
             The site is developed using Next.js, a React framework that makes it easy to build fast and efficient web applications. Styling is handled with Tailwind CSS, providing a utility-first approach to design.
@@ -66,7 +69,7 @@ const HctrPage = () => {
           </p>
         </div>
 
-        <div className="mt-8">
+        <div className="mt-8 container mx-auto p-8 bg-white rounded-lg shadow-lg">
           <h2 className="text-2xl font-semibold mb-4 text-black">About the orbs</h2>
           <p className="text-gray-600">
             For this website, I wanted to create a unique design. I decided to create a 3D animation of rotating orbs with Blender. 
@@ -87,7 +90,7 @@ const HctrPage = () => {
           )}
         </div>
 
-        <div className="mt-8">
+        <div className="mt-8 container mx-auto p-8 bg-white rounded-lg shadow-lg">
           <h2 className="text-2xl font-semibold mb-4 text-black">Deployment Process</h2>
           <p className="text-gray-600">
             This website is a constant work in progress and is getting regular updates. I manage my source code on Github with regular commits.
