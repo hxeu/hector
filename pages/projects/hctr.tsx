@@ -33,7 +33,7 @@ const HctrPage = () => {
 
         {/* Section: Technologies Used */}
         <div className="mt-8">
-          <h2 className="text-2xl font-semibold mb-4">Technologies Used</h2>
+          <h2 className="text-2xl font-semibold mb-4 text-black">Technologies Used</h2>
           <div className="flex items-center mb-2 text-gray-600">
             {/* Logo for TypeScript */}
             <Image src="/typescript-logo.svg" alt="TypeScript Logo" width={8} height={8} className="w-8 h-8 mr-2" />
