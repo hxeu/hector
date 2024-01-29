@@ -3,7 +3,8 @@
 import Head from 'next/head';
 import Image from 'next/image';
 import '../../src/app/globals.css';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
+import { useInView } from 'react-intersection-observer';
 
 const HctrPage = () => {
   const [isImageExpanded, setIsImageExpanded] = useState(false);
@@ -11,6 +12,19 @@ const HctrPage = () => {
   const handleImageClick = () => {
     setIsImageExpanded(!isImageExpanded);
   };
+
+  const [ref, inView] = useInView({
+    triggerOnce: true,
+  });
+
+  const [animateContent, setAnimateContent] = useState(false);
+
+  useEffect(() => {
+    if (inView) {
+      setAnimateContent(true);
+    }
+  }, [inView]);
+
 
   return (
     <div className="min-h-screen relative overflow-hidden bg-green-50">
@@ -23,6 +37,13 @@ const HctrPage = () => {
           Your browser does not support the video tag.
         </video>
       </div>
+      <div
+        ref={ref}
+        className={`${
+          animateContent ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
+        } transition-opacity duration-1000 ease-in-out transform`}
+      >
+
       <div className="mx-5">
         <div className=" mt-8 container mx-auto p-8 bg-white rounded-lg shadow-lg border-2 border-green-300/50">
           <h1 className="text-4xl font-bold mb-4 text-black">Creation of this Website</h1>
@@ -103,7 +124,9 @@ const HctrPage = () => {
 
       </div>
     </div>
+    </div>
   );
 };
+
 
 export default HctrPage;

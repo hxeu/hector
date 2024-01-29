@@ -53,7 +53,7 @@ export default function Page() {
         </div>
 
         {/* Section des projets */}
-        <div className="mt-8">
+        <div className="mt-8 mx-5">
           <h2 className="text-3xl font-semibold mb-4 text-center font-mono text-black">My work :</h2>
           <ProjectsList projects={projects} />
           <br/>
