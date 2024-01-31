@@ -102,13 +102,20 @@ const HctrPage = () => {
             className={`relative cursor-pointer overflow-hidden ${isImageExpanded ? 'h-full' : 'h-32'}`}
             onClick={handleImageClick}
           >
-            <Image src="/blender_screen.png" alt="Blender Logo" width={1920} height={1080} className="flex items-center" />
-          </div>
+            <Image src="/blender_screen.png" alt="Blender Screen" width={1920} height={1080} className="flex items-center" />
+          
+
           {!isImageExpanded && (
-            <p className="text-blue-500 cursor-pointer mt-2" onClick={handleImageClick}>
-              Click to view the full image
+              <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50">
+                <p className="text-green-200">Click to view the full image</p>
+              </div>
+            )}
+          {isImageExpanded && (
+            <p className="text-green-600 mt-2">
+              This is the screen of my orb in the making in Blender. Not very impressive, but I'm still learning!
             </p>
           )}
+          </div>
         </div>
 
         <div className="mt-8 container mx-auto p-8 bg-white rounded-lg shadow-lg">
@@ -121,7 +128,7 @@ const HctrPage = () => {
             I use a custom domain name (hctr.store) that I bought on Amen.fr. If you still wonder why I chose this domain name, it's because it's my name without the vowels! 
           </p>
         </div>
-
+        <br/>
       </div>
     </div>
     </div>
