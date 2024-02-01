@@ -33,7 +33,7 @@ const HctrPage = () => {
       </Head>
       <div className="relative h-96 bg-black">
         <video autoPlay loop muted playsInline className="h-full w-full">
-          <source src="/hctr.mp4" type="video/mp4" />
+          <source src="/hctr.webm" type="video/webm" />
           Your browser does not support the video tag.
         </video>
       </div>

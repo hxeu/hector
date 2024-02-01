@@ -44,7 +44,7 @@ const ProjectDetail = () => {
       </Head>
       <div className="relative h-96 bg-black">
         <video autoPlay loop muted playsInline className="h-full w-full">
-          <source src="/mauvais_soir.mp4" type="video/mp4" />
+          <source src="/mauvais_soir.webm" type="video/webm" />
           Your browser does not support the video tag.
         </video>
       </div>

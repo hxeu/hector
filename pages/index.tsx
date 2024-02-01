@@ -31,7 +31,7 @@ export default function Page() {
       </Head>
       <div className="relative h-96 bg-black">
         <video autoPlay loop muted playsInline className="h-full w-full">
-          <source src="/main.mp4" type="video/mp4" />
+          <source src="/main.webm" type="video/webm" />
           Your browser does not support the video tag.
         </video>
       </div>

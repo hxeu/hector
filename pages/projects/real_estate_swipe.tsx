@@ -33,7 +33,7 @@ const RESPage = () => {
       </Head>
       <div className="relative h-96 bg-black">
         <video autoPlay loop muted playsInline className="h-full w-full">
-          <source src="/real_estate_swipe.mp4" type="video/mp4" />
+          <source src="/real_estate_swipe.webm" type="video/webm" />
           Your browser does not support the video tag.
         </video>
       </div>
