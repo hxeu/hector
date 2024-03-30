@@ -21,7 +21,8 @@ export default function Page() {
   const projects = [
     { id: 'hctr', title: 'My Website (hctr.store) 💻', description: 'How did I make this? 👨‍💻', date: '01/2024'},
     { id: 'mauvais_soir', title: '"Mauvais Soir" 🌓', description: 'My monthly video series about my life! 🎥', date: '01/2022 - Today' },
-    { id: 'real_estate_swipe', title: 'Danish Real Estate App 🏢', description: 'Learn more about a school project I did in Denmark. 📱', date: '06/2023' },
+    { id: 'real_estate_swipe', title: 'Danish Real Estate App 🏢', description: 'Learn more about an app I did in Denmark for a school project. 🏠📱', date: '06/2023' },
+    { id: 'globetu', title: "Glob'Étu", description: 'Another app for a school project, this time in Canada. 🎓✈️📱', date: '12/2023'}
   ];
 
   return (
@@ -45,7 +46,7 @@ export default function Page() {
         <br />
         <div className="relative z-10 text-center p-8">
           <h1 className="text-black text-5xl font-mono font-bold mb-2 tracking-tight">Hector Ménétrier</h1>
-          <p className="text-gray-500">CS Student in France 🇫🇷, Denmark 🇩🇰 and Canada 🇨🇦</p>
+          <p className="text-gray-500">CS Student in France 🇫🇷, Denmark 🇩🇰 and Canada 🇨🇦 ! ( soon in Sweden 🇸🇪 )</p>
         </div>
 
         <div className="text-center p-4 text-gray-400">
