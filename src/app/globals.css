@@ -36,3 +36,32 @@ body {
     text-wrap: balance;
   }
 }
+
+@font-face {
+  font-family: 'Fleuron-mixed';
+  src: 
+       url('../../public/fleuronmixed-webfont.woff2') format('woff2'),
+       
+}
+
+@font-face {
+  font-family: 'Fleuron-glyph';
+  src: url('../../public/fleurondingbats-webfont.woff2') format('woff2'),
+}
+
+@font-face {
+  font-family: 'Fleuron-regular';
+  src: url('../../public/fleuronregular-webfont.woff2') format('woff2');
+}
+
+.fleuron-mixed{
+  font-family: 'Fleuron-mixed';
+}
+
+.fleuron-glyph{
+  font-family: 'Fleuron-glyph';
+}
+
+.fleuron-regular{
+  font-family: 'Fleuron-regular';
+}

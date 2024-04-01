@@ -45,7 +45,7 @@ export default function Page() {
         <br />
         <br />
         <div className="relative z-10 text-center p-8">
-          <h1 className="text-black text-5xl font-mono font-bold mb-2 tracking-tight">Hector Ménétrier</h1>
+          <h1 className="text-black text-7xl mb-2 fleuron-mixed">H<a className="fleuron-regular">ecto</a>r M<a className="fleuron-regular">énétrie</a>r</h1>
           <p className="text-gray-500">CS Student in France 🇫🇷, Denmark 🇩🇰 and Canada 🇨🇦 ! ( soon in Sweden 🇸🇪 )</p>
         </div>
 
