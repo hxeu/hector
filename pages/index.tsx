@@ -46,11 +46,13 @@ export default function Page() {
         <br />
         <div className="relative z-10 text-center p-8">
           <h1 className="text-black text-8xl mb-2 protest">Hector Menetrier</h1>
-          <p className="text-gray-500 mt-10">CS Student in France 🇫🇷, Denmark 🇩🇰 and Canada 🇨🇦 ! ( soon in Sweden 🇸🇪 )</p>
+          <p className="text-gray-600 mt-10">SSLIO Master Student in Sweden 🇸🇪 </p>
+          <p className="text-gray-600 ">Old CS Bachelor Student in France 🇫🇷, Denmark 🇩🇰 and Canada 🇨🇦 </p>
+          
         </div>
 
-        <div className="text-center p-4 text-gray-400">
-          Soon to be Double Computer Science Graduate 🇫🇷 - 🇨🇦 - URCA-UQAC - Graduating in August 2024
+        <div className="text-center p-4 text-gray-500">
+          Double Computer Science Graduate 🇫🇷 - 🇨🇦 - URCA-UQAC - Graduated in August 2024
         </div>
 
         {/* Section des projets */}
