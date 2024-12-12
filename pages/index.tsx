@@ -45,7 +45,7 @@ export default function Page() {
         <br />
         <br />
         <div className="relative z-10 text-center p-8">
-          <h1 className="text-black text-8xl mb-2 elastix">Hector<p className='protest'> </p>Menetrier</h1>
+          <h1 className="text-black text-8xl mb-2 protest">Hector Menetrier</h1>
           <p className="text-gray-500 mt-10">CS Student in France 🇫🇷, Denmark 🇩🇰 and Canada 🇨🇦 ! ( soon in Sweden 🇸🇪 )</p>
         </div>
 
