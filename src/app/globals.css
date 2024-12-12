@@ -65,3 +65,39 @@ body {
 .fleuron-regular{
   font-family: 'Fleuron-regular';
 }
+
+@font-face{
+  font-family: 'Glass-Water';
+  src: url('../../public/Glass-Water.ttf') format('truetype');
+}
+
+.glass-water{
+  font-family: 'Glass-Water';
+}
+
+@font-face {
+  font-family: 'Protest';
+  src: url('../../public/Protest.ttf') format('truetype');
+}
+
+.protest{
+  font-family: 'Protest';
+}
+
+@font-face {
+  font-family: 'Bizantheum';
+  src: url('../../public/Bizantheum.otf') format('opentype');
+}
+
+.bizantheum{
+  font-family: 'Bizantheum';
+}
+
+@font-face {
+  font-family: 'Elastix';
+  src: url('../../public/Elastix.ttf') format('truetype');
+}
+
+.elastix{
+  font-family: 'Elastix';
+}
