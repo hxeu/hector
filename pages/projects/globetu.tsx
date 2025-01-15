@@ -1,5 +1,5 @@
 /* eslint-disable react/no-unescaped-entities */
-// pages/projects/globetu.tsx
+// pages/projects/globetu.tsx 
 import Head from "next/head";
 import Image from "next/image";
 import "../../src/app/globals.css";
